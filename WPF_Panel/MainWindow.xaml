@@ -1,0 +1,12 @@
+﻿<Window x:Class="FirstWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="346" Width="189">
+    <StackPanel>
+    	<Button x:Name="bGrid" Content="Grid" Click="Button_Click"/>
+        <Button x:Name="bStack" Content="StackPanel" Click="bStack_Click"/>
+        <Button x:Name="bCanvas" Content="Canvas" Click="bCanvas_Click"/>
+        <Button x:Name="bDock" Content="DockPanel" Click="bDock_Click"/>
+        <Button x:Name="bWrap" Content="WrapPanel" Click="bWrap_Click"/>
+    </StackPanel>
+</Window>

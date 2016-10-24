@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF_DataBinding.BindingConverter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPF_DataBinding"
+        Title="BindingConverter" Height="356.797" Width="300">
+    <Window.Resources>
+        <local:Picture x:Key="p1">Picture1</local:Picture>
+        <local:Picture x:Key="p2">Picture2</local:Picture>
+        <local:PictureToSourceConverter x:Key="cv"/>
+    </Window.Resources>
+    <StackPanel>
+        <Image Height="150" Margin="5" Source="{Binding Source={StaticResource p1}, Converter={StaticResource cv}}"/>
+        <Image Height="150" Margin="5" Source="{Binding Source={StaticResource p2}, Converter={StaticResource cv}}"/>
+    </StackPanel>
+</Window>

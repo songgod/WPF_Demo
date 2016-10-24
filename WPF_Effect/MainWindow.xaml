@@ -1,0 +1,12 @@
+﻿<Window x:Class="WPF_Effect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Image Source="/Resource/Heads/DSC_0280.JPG">
+            <Image.BitmapEffect>
+                <BlurBitmapEffect Radius="10"/>
+            </Image.BitmapEffect>
+        </Image>
+    </Grid>
+</Window>

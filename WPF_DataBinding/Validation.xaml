@@ -1,0 +1,9 @@
+﻿<Window x:Class="WPF_DataBinding.Validation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Validation" Height="300" Width="300">
+    <StackPanel>
+        <TextBox x:Name="texbox" Text="{Binding ElementName=slider, Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5" TextWrapping="Wrap"/>
+        <Slider x:Name="slider" Margin="5"/>
+    </StackPanel>
+</Window>

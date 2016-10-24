@@ -1,0 +1,12 @@
+﻿<Window x:Class="WPF_TypeConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPF_TypeConverter"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:Company x:Key="GPT" Owner="秦志军"/>
+    </Window.Resources>
+    <Grid>
+        <TextBlock Text="{Binding Source={StaticResource ResourceKey=GPT}, Path=Owner.Name}"/>
+    </Grid>
+</Window>

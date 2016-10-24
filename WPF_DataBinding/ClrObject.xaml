@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF_DataBinding.ClrObject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPF_DataBinding"
+        Title="ClrObject" Height="300" Width="300">
+    <Window.Resources>
+        <local:Student x:Key="tom" ID="0" Name="Tom" Skill="eat"/>
+    </Window.Resources>
+    <StackPanel>
+        <TextBox Margin="5" Text="{Binding Source={StaticResource tom}, Path=Name}"/>
+        <TextBox Margin="5" Text="{Binding Source={StaticResource tom}, Path=ID}"/>
+        <TextBox Margin="5" Text="{Binding Source={StaticResource tom}, Path=Skill}"/>
+        <Button Content="Button" Click="Button_Click"/>
+    </StackPanel>
+</Window>

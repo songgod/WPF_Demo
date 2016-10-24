@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPF_Zoom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" MinWidth="50"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Text="Row-0 Column-0" Grid.ColumnSpan="3" BorderBrush="Black"/>
+        <Viewbox Grid.Row="1">
+            <TextBox Text="Row-1 Column-1" BorderBrush="Black"/>
+        </Viewbox>
+        <Viewbox Grid.Row="1" Grid.Column="2">
+            <TextBox Text="Row-1 Column-2" BorderBrush="Black"/>
+        </Viewbox>
+
+        <GridSplitter Grid.Row="1" Grid.Column="1"  
+                VerticalAlignment="Stretch"  
+                HorizontalAlignment="Center"  
+                Width="10"  
+                Background="Red"  
+                ShowsPreview="False"  
+                />
+    </Grid>
+</Window>

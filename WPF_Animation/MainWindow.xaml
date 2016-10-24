@@ -1,0 +1,38 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WPF_Animation.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+	<Window.Resources>
+		<Storyboard x:Key="Storyboard1">
+			<DoubleAnimationUsingPath Duration="0:0:2" Source="X" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M27.00011,167.58163 C32.21793,147.45581 31.343335,143.85038 48.000137,128.58168 C68.553173,109.74145 72.167971,91.132946 110.00022,107.58171 C134.39626,118.18866 136.38377,152.54661 157.00028,168.58163 C177.26329,184.34171 188.21517,152.9088 213.00035,142.58166 C225.33884,137.44064 225.66824,166.69595 232.00038,183.58161 C237.01124,196.94387 249.65786,204.8965 256.00041,217.58157 C267.54327,240.66723 285.74773,246.49327 217.00036,257.58152 C191.85149,261.63778 168.69648,263.00908 143.00026,261.58152 C107.03683,259.58355 117.65779,262.38299 106.00021,221.58157 C103.08073,211.3634 93.559495,216.89266 77.000175,228.58156 C63.634806,238.01591 40.153862,239.99199 32.000117,253.58153 C30.738354,255.68446 32.185909,260.27004 30.000114,261.58152 C23.491757,265.48652 21.008325,254.60345 15.000095,238.58155 C9.9701135,225.1683 11.070941,218.20908 12.000091,204.58159"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath Duration="0:0:2" Source="Y" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M27.00011,167.58163 C32.21793,147.45581 31.343335,143.85038 48.000137,128.58168 C68.553173,109.74145 72.167971,91.132946 110.00022,107.58171 C134.39626,118.18866 136.38377,152.54661 157.00028,168.58163 C177.26329,184.34171 188.21517,152.9088 213.00035,142.58166 C225.33884,137.44064 225.66824,166.69595 232.00038,183.58161 C237.01124,196.94387 249.65786,204.8965 256.00041,217.58157 C267.54327,240.66723 285.74773,246.49327 217.00036,257.58152 C191.85149,261.63778 168.69648,263.00908 143.00026,261.58152 C107.03683,259.58355 117.65779,262.38299 106.00021,221.58157 C103.08073,211.3634 93.559495,216.89266 77.000175,228.58156 C63.634806,238.01591 40.153862,239.99199 32.000117,253.58153 C30.738354,255.68446 32.185909,260.27004 30.000114,261.58152 C23.491757,265.48652 21.008325,254.60345 15.000095,238.58155 C9.9701135,225.1683 11.070941,218.20908 12.000091,204.58159"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+		</EventTrigger>
+	</Window.Triggers>
+	<Grid>
+		<Button x:Name="button" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+        
+	</Grid>
+</Window>

@@ -1,0 +1,35 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="FirstWPF.wWrapPanel"
+	x:Name="Window"
+	Title="wWrapPanel"
+	Width="423" Height="183">
+
+	<WrapPanel x:Name="LayoutRoot">
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+		<Button Content="Button" Width="75"/>
+	</WrapPanel>
+</Window>

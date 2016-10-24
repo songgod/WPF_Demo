@@ -1,0 +1,13 @@
+﻿<Window x:Class="WPF_DataBinding.NoSource"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NoSource" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="tbName" Margin="5" Text="{Binding Path=Name}"/>
+            <TextBox x:Name="tbID" Margin="5" Text="{Binding Path=ID}"/>
+            <TextBox x:Name="tbSkill" Margin="5" Text="{Binding Path=Skill}"/>
+            <Button Content="Button" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

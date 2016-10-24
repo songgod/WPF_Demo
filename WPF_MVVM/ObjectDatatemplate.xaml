@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:WPF_MVVM"
+                    xmlns:localvm="clr-namespace:WPF_MVVM.ViewModels">
+    <DataTemplate DataType="{x:Type localvm:ObjRectangle}">
+        <Rectangle Width="{Binding Width}" Height="{Binding Height}" Fill="Red">
+            <Rectangle.RenderTransform>
+                <TranslateTransform X="{Binding Left}" Y="{Binding Top}"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+    </DataTemplate>
+</ResourceDictionary>

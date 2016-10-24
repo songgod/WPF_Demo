@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF_DataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="342.135" Width="294.288">
+    <StackPanel>
+        <Button x:Name="ClrObject" Content="Clr Object Source" Click="ClrObject_Click"/>
+        <Button x:Name="NotifyClrObject" Content="Notify Clr Object Source" Click="NotifyClrObject_Click"/>
+        <Button x:Name="SetObject" Content="Set Object Source" Click="SetObject_Click"/>
+        <Button x:Name="UIObject" Content="UI Object Source" Click="UIObject_Click"/>
+        <Button x:Name="DataContext" Content="No Source" Click="DataContext_Click"/>
+        <Button x:Name="RelativeS" Content="Relatives Source" Click="RelativeSource_Click"/>
+        <Button x:Name="Converter" Content="Converter Path" Click="Converter_Click"/>
+        <Button x:Name="Validation" Content="Validation Path" Click="Validation_Click"/>
+    </StackPanel>
+</Window>
